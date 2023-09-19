@@ -47,7 +47,7 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #0c2337;
+  background-color: #579262;
   color: white;
   font-size: 15px;
 }
@@ -78,7 +78,7 @@ h2 {
 }
 
 .navbar-links li a:hover {
-  background-color: #38b6ff;
+  background-color: #4b7e54;
 }
 
 .navbar-mlogin {
