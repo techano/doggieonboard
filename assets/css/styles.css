@@ -153,6 +153,7 @@ h2 {
 .content-hh-imgdiv {
   grid-area: image;
   aspect-ratio: 1;
+  background-color: maroon;
 }
 
 .content-hh-imgdiv img{
@@ -162,6 +163,7 @@ h2 {
 .content-hh-txtdiv {
   grid-area: text;
   aspect-ratio: 1;
+  background-color: #4b7e54;
 }
 
 /* home div styling ends */
@@ -229,5 +231,31 @@ h2 {
 
   .navbar-logo {
     height: 2.5rem;
+  }
+
+  .content-hh-imgtxt {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: 
+    "image"
+    "text"
+    ;
+  }
+  
+  .content-hh-imgdiv {
+    grid-area: image;
+    aspect-ratio: 1;
+    background-color: maroon;
+  }
+  
+  .content-hh-imgdiv img{
+    max-width: 100%;
+    height: auto;
+  }
+  .content-hh-txtdiv {
+    grid-area: text;
+    aspect-ratio: 1;
+    background-color: #4b7e54;
   }
 }
