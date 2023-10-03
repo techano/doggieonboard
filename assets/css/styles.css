@@ -79,7 +79,6 @@ h2 {
   color: white;
   padding: 1rem;
   display: block;
-  border-radius: 10px;
   transition: background-color 250ms linear;
 }
 
@@ -87,16 +86,6 @@ h2 {
   background-color: #4b7e54;
 }
 
-.navbar-mlogin {
-  text-decoration: none;
-  color: white;
-  display: block;
-  position: absolute;
-
-  right: 4rem;
-  top: 1rem;
-  display: none;
-}
 .navbar-mtoggle {
   position: absolute;
   top: 1rem;
@@ -153,7 +142,7 @@ h2 {
 .content-hh-imgdiv {
   grid-area: image;
   aspect-ratio: 1;
-  background-color: maroon;
+background-color: maroon;
 }
 
 .content-hh-imgdiv img{
@@ -163,13 +152,13 @@ h2 {
 .content-hh-txtdiv {
   grid-area: text;
   aspect-ratio: 1;
-  background-color: #4b7e54;
+background-color: #4b7e54;
 }
 
 /* home div styling ends */
 /*mobile edition styling beings*/
 
-@media (max-width: 720px) {
+@media (max-width: 600px) {
   .navbar-mtoggle {
     display: flex;
   }
@@ -219,14 +208,6 @@ h2 {
 
   .navbar-links li a {
     padding: 0.5rem 1rem;
-  }
-
-  .navbar-mlogin {
-    display: flex;
-  }
-
-  .navbar-login {
-    display: none;
   }
 
   .navbar-logo {
