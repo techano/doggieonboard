@@ -142,7 +142,7 @@ h2 {
 .content-hh-imgdiv {
   grid-area: image;
   aspect-ratio: 1;
-background-color: maroon;
+  background-color: maroon;
 }
 
 .content-hh-imgdiv img{
@@ -152,7 +152,8 @@ background-color: maroon;
 .content-hh-txtdiv {
   grid-area: text;
   aspect-ratio: 1;
-background-color: #4b7e54;
+  padding: 12px;
+  background-color: #4b7e54;
 }
 
 /* home div styling ends */
