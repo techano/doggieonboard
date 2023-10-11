@@ -237,8 +237,8 @@ h2 {
     grid-template-columns: auto;
     grid-template-rows: 50% 50%;
     grid-template-areas:
-      "image"
-      "text";
+      "text"
+      "image";
   }
 
   .content-hh-imgtxt-invert {
@@ -246,12 +246,16 @@ h2 {
     grid-template-columns: auto;
     grid-template-rows: 50% 50%;
     grid-template-areas:
-      "image"
-      "text";
+      "text"
+      "image";
   }
 
   .content-hh-imgdiv img {
     width: 100%;
     height: auto;
+  }
+
+  .content-hh-imgdiv {
+    padding: 0%;
   }
 }
