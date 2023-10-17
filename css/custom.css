@@ -1,0 +1,13 @@
+.imgtest {
+  display: block;
+  background-image: url("/images/logos/logo_square.png");
+  background-position: center;
+  background-size: contain;
+}
+
+.imgtest2 {
+  display: block;
+  background-image: url("/images/logos/logo_square.png");
+  background-position: center;
+  background-size: contain;
+}
