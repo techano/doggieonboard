@@ -41,7 +41,7 @@ body {
 }
 
 h1 {
-  font-weight: 500;
+  font-weight: 400;
 }
 
 h2 {
@@ -164,11 +164,11 @@ h2 {
 }
 
 .content-hh-txtdiv h2 {
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
 
 .content-hh-txtdiv p {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 /* home div styling ends */
@@ -250,5 +250,13 @@ h2 {
 
   .content-hh-imgdiv {
     padding: 0%;
+  }
+
+  .content-hh-txtdiv h2 {
+    font-size: 2.5rem;
+  }
+  
+  .content-hh-txtdiv p {
+    font-size: 1.25rem;
   }
 }
