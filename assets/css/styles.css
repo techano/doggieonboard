@@ -250,13 +250,16 @@ h2 {
 
   .content-hh-imgdiv {
     padding: 0%;
+    aspect-ratio: 0;
   }
 
-  .content-hh-txtdiv h2 {
+  .content-hh-txtdiv h2,
+  .content-hh-txtdiv-invert h2 {
     font-size: 2.5rem;
   }
   
-  .content-hh-txtdiv p {
+  .content-hh-txtdiv p,
+  .content-hh-txtdiv-invert p {
     font-size: 1.25rem;
   }
 }
