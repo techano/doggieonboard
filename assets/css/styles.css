@@ -48,6 +48,16 @@ h2 {
   font-weight: 300;
 }
 
+.rectaspect {
+  aspect-ratio: 2/1;
+  overflow: hidden;
+}
+
+.squareaspect {
+  aspect-ratio: 1/1;
+  overflow: hidden;
+}
+
 /*nav bar styling begins*/
 .navbar {
   display: flex;
@@ -122,16 +132,6 @@ h2 {
 /* nav bar styling ends */
 /* home div styling begins */
 
-.home {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.home h1 {
-  text-align: center;
-}
-
 .content-hh-imgtxt, .content-hh-imgtxt-invert {
   display: grid;
   grid-template-columns: 50% 50%;
@@ -145,7 +145,6 @@ h2 {
 
 .content-hh-imgdiv {
   grid-area: image;
-  aspect-ratio: 1;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -159,7 +158,6 @@ h2 {
 }
 .content-hh-txtdiv {
   grid-area: text;
-  aspect-ratio: 1;
   padding: 20px;
 }
 
