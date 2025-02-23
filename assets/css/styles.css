@@ -38,14 +38,25 @@ body {
   padding: 0;
   width: 100%;
   height: 100%;
+  line-height: 1.75;
 }
 
 h1 {
-  font-weight: 500;
+  font-weight: 400;
 }
 
 h2 {
   font-weight: 300;
+}
+
+.rectaspect {
+  aspect-ratio: 2/1;
+  overflow: hidden;
+}
+
+.squareaspect {
+  aspect-ratio: 1/1;
+  overflow: hidden;
 }
 
 /*nav bar styling begins*/
@@ -79,24 +90,13 @@ h2 {
   color: white;
   padding: 1rem;
   display: block;
-  border-radius: 10px;
-  transition: background-color 250ms linear;
+  transition: background-color 200ms linear;
 }
 
 .navbar-links li a:hover {
   background-color: #4b7e54;
 }
 
-.navbar-mlogin {
-  text-decoration: none;
-  color: white;
-  display: block;
-  position: absolute;
-
-  right: 4rem;
-  top: 1rem;
-  display: none;
-}
 .navbar-mtoggle {
   position: absolute;
   top: 1rem;
@@ -133,43 +133,48 @@ h2 {
 /* nav bar styling ends */
 /* home div styling begins */
 
-.home {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.home h1 {
-  text-align: center;
-}
-
-.content-hh-imgtxt {
+.content-hh-imgtxt,
+.content-hh-imgtxt-invert {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: auto;
   grid-template-areas: "image text";
 }
 
-.content-hh-imgdiv {
-  grid-area: image;
-  aspect-ratio: 1;
-  background-color: maroon;
+.content-hh-imgtxt-invert {
+  grid-template-areas: "text image";
 }
 
-.content-hh-imgdiv img{
-  max-width: 100%;
-  height: auto;
+.content-hh-imgdiv {
+  grid-area: image;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.content-hh-imgdiv img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 .content-hh-txtdiv {
   grid-area: text;
-  aspect-ratio: 1;
-  background-color: #4b7e54;
+  padding: 20px;
+}
+
+.content-hh-txtdiv h2 {
+  font-size: 3rem;
+}
+
+.content-hh-txtdiv p {
+  font-size: 2rem;
 }
 
 /* home div styling ends */
 /*mobile edition styling beings*/
 
-@media (max-width: 720px) {
+@media (max-width: 600px) {
   .navbar-mtoggle {
     display: flex;
   }
@@ -221,14 +226,6 @@ h2 {
     padding: 0.5rem 1rem;
   }
 
-  .navbar-mlogin {
-    display: flex;
-  }
-
-  .navbar-login {
-    display: none;
-  }
-
   .navbar-logo {
     height: 2.5rem;
   }
@@ -237,25 +234,36 @@ h2 {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: 50% 50%;
-    grid-template-areas: 
-    "image"
-    "text"
-    ;
+    grid-template-areas:
+      "text"
+      "image";
   }
-  
+
+  .content-hh-imgtxt-invert {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 50% 50%;
+    grid-template-areas:
+      "text"
+      "image";
+  }
+
   .content-hh-imgdiv {
-    grid-area: image;
-    aspect-ratio: 1;
-    background-color: maroon;
+    padding: 0%;
   }
-  
-  .content-hh-imgdiv img{
-    max-width: 100%;
-    height: auto;
+
+  .content-hh-txtdiv h2,
+  .content-hh-txtdiv-invert h2 {
+    font-size: 1.75rem;
   }
-  .content-hh-txtdiv {
-    grid-area: text;
-    aspect-ratio: 1;
-    background-color: #4b7e54;
+
+  .content-hh-txtdiv p,
+  .content-hh-txtdiv-invert p {
+    font-size: 1rem;
+  }
+
+  .squareaspect,
+  .rectaspect {
+    overflow: visible;
   }
 }
